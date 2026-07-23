@@ -1,0 +1,38 @@
+name: "🔧 Замечание / ошибка / противоречие"
+description: "Что-то в тексте неверно, спорно или противоречит другому разделу"
+title: "[Замечание]: "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо за замечание! Чем конкретнее раздел и пример — тем быстрее удастся разобрать.
+  - type: input
+    id: section
+    attributes:
+      label: "Раздел"
+      description: "Номер/название файла или конкретная формулировка"
+      placeholder: "например, 04_УПРАВЛЕНИЕ_ИЗМЕНЕНИЯМИ, блок «Классификация»"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: "В чём проблема"
+      description: "Что именно неверно, спорно или противоречит другому разделу"
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: "Пример из практики"
+      description: "Реальная ситуация, где это проявляется. Пример ценнее общего впечатления."
+    validations:
+      required: false
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: "Как, по-вашему, должно быть"
+      description: "Предлагаемая формулировка или направление правки (если есть)"
+    validations:
+      required: false

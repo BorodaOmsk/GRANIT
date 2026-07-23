@@ -1,0 +1,38 @@
+name: "💡 Улучшение / практика из опыта"
+description: "Есть более удачная практика, проверенная на вашем опыте"
+title: "[Улучшение]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Практика, проверенная на реальном опыте, — самый ценный вид обратной связи.
+  - type: input
+    id: section
+    attributes:
+      label: "Какой раздел улучшаем"
+      description: "Номер/название файла или «новый раздел»"
+      placeholder: "например, 05_ПЛАНИРОВАНИЕ_И_БУФЕРЫ"
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: "Как сейчас"
+      description: "Что методология предлагает в текущей версии"
+    validations:
+      required: false
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "Что предлагаете"
+      description: "Ваша практика/подход и чем он лучше"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "На чём основано"
+      description: "Где это сработало: тип проекта, команда, результат. Конкретика приветствуется."
+    validations:
+      required: true

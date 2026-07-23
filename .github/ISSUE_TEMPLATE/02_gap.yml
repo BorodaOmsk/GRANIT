@@ -1,0 +1,38 @@
+name: "🕳 Пробел: чего-то не хватает"
+description: "В методологии не хватает темы, раздела, шаблона или сценария"
+title: "[Пробел]: "
+labels: ["gap"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Опишите, чего не хватает и почему это важно именно для госконтрактов.
+  - type: textarea
+    id: gap
+    attributes:
+      label: "Чего не хватает"
+      description: "Тема, сценарий, шаблон или контур, который стоит добавить"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: "Почему это важно"
+      description: "Какую реальную проблему закроет этот раздел/дополнение"
+    validations:
+      required: true
+  - type: input
+    id: related-section
+    attributes:
+      label: "Связанный раздел"
+      description: "Куда это логично встроить или к чему примыкает (если понятно)"
+      placeholder: "например, рядом с 11_УПРАВЛЕНИЕ_РИСКАМИ"
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: "Контекст"
+      description: "Размер команды, тип контракта, условия — где пробел особенно заметен"
+    validations:
+      required: false

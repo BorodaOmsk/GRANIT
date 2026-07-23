@@ -1,0 +1,31 @@
+name: "❓ Вопрос по методологии"
+description: "Что-то непонятно в том, как применять методологию"
+title: "[Вопрос]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Если это скорее обсуждение, чем короткий вопрос, — лучше в [Discussions](https://github.com/BorodaOmsk/GRANIT/discussions).
+  - type: input
+    id: section
+    attributes:
+      label: "Связанный раздел"
+      description: "О каком разделе вопрос (если применимо)"
+      placeholder: "например, 10_КАЧЕСТВО_И_DOD"
+    validations:
+      required: false
+  - type: textarea
+    id: question
+    attributes:
+      label: "Вопрос"
+      description: "Что именно непонятно или как лучше поступить в вашей ситуации"
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: "Контекст"
+      description: "Размер команды, тип контракта — чтобы ответ был точным"
+    validations:
+      required: false

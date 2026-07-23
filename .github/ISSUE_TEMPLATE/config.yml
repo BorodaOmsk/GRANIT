@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "💬 Обсуждения (Discussions)"
+    url: https://github.com/BorodaOmsk/GRANIT/discussions
+    about: "Обсудить идею, задать вопрос или поделиться своим опытом применения методологии"
+  - name: "📖 Как внести вклад (CONTRIBUTING)"
+    url: https://github.com/BorodaOmsk/GRANIT/blob/main/CONTRIBUTING.md
+    about: "Как выбрать канал обратной связи и оформить предложение"
